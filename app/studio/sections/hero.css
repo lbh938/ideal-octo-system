@@ -1,0 +1,115 @@
+/* Hero Section Styles */
+.hero-section {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 140px 0 140px;
+    max-width: 1400px;
+    margin: 0 auto;
+    direction: ltr;
+    scroll-snap-align: start;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.hero-content {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.hero-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styles renforcés pour le titre principal */
+.hero-title {
+    font-size: 93pximportant;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    margin-bottom: 20px !important;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-line {
+    display: block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.title-line:nth-child(1) {
+    transition-delay: 200ms;
+}
+
+.title-line:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.title-line:nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.title-line.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-title.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-description {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease 0.4s;
+}
+
+.hero-description.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Hero */
+@media (max-width: 1072px) {
+    .hero-section {
+        padding: 100px 40px 0 40px;
+    }
+    
+    .hero-title {
+        font-size: 36px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 20px 0 20px;
+        height: 70vh;
+    }
+    
+    .hero-title {
+        font-size: 28px !important;
+    }
+    
+    .hero-description {
+        font-size: 16px;
+    }
+}

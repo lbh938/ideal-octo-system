@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ovo Flow - Application de Création</title>
+    <meta name="description" content="Ovo Flow - Application de création et streaming en temps réel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/app/studio/app.css">
+    <link rel="stylesheet" href="/app/studio/sections/navigation.css">
+    <link rel="stylesheet" href="/app/studio/sections/hero.css">
+    <link rel="stylesheet" href="/app/studio/sections/probleme.css">
+    <link rel="stylesheet" href="/app/studio/sections/contact.css">
+    <link rel="stylesheet" href="/app/studio/sections/colors.css">
+    <script src="/app/studio/app.js" defer></script>
+</head>
+<body>
+    <!-- Vidéo en arrière-plan pour toutes les sections -->
+    <div class="background-video-container">
+        <video class="background-video" autoplay muted loop playsinline>
+            <source src="cdn/obj/assets/tikcast/game/webapp/static/image/13820343_3840_2160_30fps.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="208" height="31" fill="none" viewBox="0 0 208 31">
+                    <g clip-path="url(#studio-logo-dark_svg__a)">
+                        <path fill="#fff" d="M20.68 5.692a6.8 6.8 0 0 1-1.908-1.923A6.9 6.9 0 0 1 17.645 0h-4.792v19.564a4.14 4.14 0 0 1-1.23 2.8 4 4 0 0 1-2.793 1.148 4 4 0 0 1-1.869-.468 4.07 4.07 0 0 1-1.577-1.51 4.148 4.148 0 0 1 .598-5.024 4 4 0 0 1 2.848-1.203c.404 0 .805.065 1.19.19v-4.965a9 9 0 0 0-1.19-.088 8.75 8.75 0 0 0-6.235 2.636 9.08 9.08 0 0 0-2.587 6.35c0 1.445.343 2.868 1 4.15a8.9 8.9 0 0 0 2.768 3.207 8.66 8.66 0 0 0 5.054 1.63 8.75 8.75 0 0 0 6.235-2.636 9.08 9.08 0 0 0 2.588-6.35V9.508a11.26 11.26 0 0 0 6.669 2.185V6.812a6.56 6.56 0 0 1-3.641-1.12M28.89 6.816h15.114l-1.387 4.405h-3.921v16.286H33.81V11.22h-4.916zM68.77 6.816h15.466L82.85 11.22h-4.265v16.286H73.69V11.22h-4.915zM45.051 13.395h4.845L49.892 27.5h-4.811zM52.4 6.759h4.838v9.633l4.796-4.794h5.78l-6.068 5.997 6.797 9.9h-5.335l-4.535-6.873-1.435 1.42v5.453H52.4zM100.449 6.759h4.86v9.633l4.797-4.794h5.768l-6.068 5.997 6.793 9.9h-5.331l-4.534-6.873-1.436 1.42v5.453h-4.86zM47.473 11.781c1.347 0 2.438-1.112 2.438-2.483s-1.091-2.482-2.438-2.482c-1.346 0-2.437 1.111-2.437 2.482s1.091 2.483 2.437 2.483M90.255 10.612c-2.2 0-4.308.89-5.863 2.474a8.53 8.53 0 0 0-2.429 5.972c0 2.24.874 4.388 2.429 5.971a8.22 8.22 0 0 0 5.863 2.474 8.2 8.2 0 0 0 3.172-.643 8.3 8.3 0 0 0 2.69-1.83 8.5 8.5 0 0 0 1.796-2.74 8.6 8.6 0 0 0 .63-3.232 8.6 8.6 0 0 0-.63-3.232 8.5 8.5 0 0 0-1.796-2.74 8.3 8.3 0 0 0-2.69-1.831 8.2 8.2 0 0 0-3.172-.643m0 12.565c-.53 0-1.053-.106-1.542-.312a4 4 0 0 1-1.308-.89 4.1 4.1 0 0 1-.873-1.331 4.17 4.17 0 0 1 .873-4.474 4 4 0 0 1 1.308-.89 4 4 0 0 1 1.542-.312c1.069 0 2.094.432 2.85 1.202a4.143 4.143 0 0 1-.006 5.795 4 4 0 0 1-2.844 1.197z"></path>
+                        <path fill="#FE2C55" d="M205.574 6.759h-81.283c-1.249 0-2.262 1.031-2.262 2.303V25.22c0 1.272 1.013 2.303 2.262 2.303h81.283c1.249 0 2.261-1.031 2.261-2.303V9.061c0-1.272-1.012-2.303-2.261-2.303"></path>
+                        <path fill="#fff" d="M127.159 22.633V11.971h2.243v8.663h3.918v1.995zM163.634 19.537c.045.716.598 1.265 1.54 1.265s1.495-.442 1.495-1.112c0-.537-.269-.903-1.244-1.192l-1.242-.35c-1.783-.564-2.665-1.573-2.665-3.02-.011-.43.075-.858.251-1.25.176-.39.438-.736.766-1.008a3.7 3.7 0 0 1 2.531-.883c.911-.04 1.803.27 2.501.868.328.29.587.652.759 1.06.171.406.25.847.231 1.29h-2.187c0-.717-.478-1.189-1.334-1.189-.778 0-1.331.442-1.331 1.051 0 .503.374.853 1.121 1.066l1.23.381c1.929.567 2.875 1.634 2.83 3.176a2.85 2.85 0 0 1-.568 1.72c-.748.964-1.869 1.36-3.148 1.36a4 4 0 0 1-2.71-.902 2.96 2.96 0 0 1-.779-1.053 3 3 0 0 1-.253-1.293zM180.33 15.509h2.019v7.124h-2.019v-.979a2.15 2.15 0 0 1-.756.82c-.318.2-.683.312-1.057.323-1.63 0-2.77-1.07-2.77-3.02V15.52h2.018v3.808c0 1.024.662 1.42 1.275 1.42.718 0 1.29-.457 1.29-1.45zM194.253 14.342c.19-.185.299-.44.305-.707a1.01 1.01 0 0 0-.63-.912 1 1 0 0 0-.379-.066.98.98 0 0 0-.716.27q-.145.139-.227.322a1 1 0 0 0-.089.386 1.04 1.04 0 0 0 .314.713 1 1 0 0 0 .718.277.98.98 0 0 0 .704-.283M137.155 11.975h-2.216v10.662h2.216zM138.281 11.975h2.494l2.691 7.753 2.673-7.753h2.512l-3.959 10.662h-2.452zM149.686 11.971v10.662l7.193-.004v-1.995h-4.976v-2.54h4.744v-1.873h-4.744v-2.254h4.976V11.97z"></path>
+                        <path fill="#fff" fill-rule="evenodd" d="M189.145 16.293a2.84 2.84 0 0 0-.995-.713 2.8 2.8 0 0 0-1.196-.224c-1.955 0-3.428 1.592-3.428 3.705s1.473 3.705 3.428 3.705c.409.008.816-.072 1.193-.234s.717-.402.998-.706v.807h2.011V11.971h-2.011zm-1.821 4.57a1.74 1.74 0 0 1-1.241-.526 1.81 1.81 0 0 1-.004-2.528 1.705 1.705 0 0 1 1.245-.51c.464-.003.911.183 1.241.516a1.8 1.8 0 0 1 .387 1.945 1.8 1.8 0 0 1-.384.58 1.74 1.74 0 0 1-1.251.511z" clip-rule="evenodd"></path>
+                        <path fill="#fff" d="M171.032 12.923h2.015v2.586h1.473v1.603h-1.473v5.521h-2.015v-5.521h-1.263v-1.603h1.263z"></path>
+                        <path fill="#fff" fill-rule="evenodd" d="M199.29 15.357a3.6 3.6 0 0 0-1.429.248 3.6 3.6 0 0 0-1.218.8 3.7 3.7 0 0 0-.813 1.222c-.188.46-.282.952-.278 1.45a3.7 3.7 0 0 0 .281 1.468c.193.465.479.883.84 1.227a3.82 3.82 0 0 0 2.617 1.013c.966.007 1.9-.354 2.617-1.012.361-.345.648-.763.841-1.228s.288-.964.281-1.468c.004-.498-.09-.99-.278-1.45a3.7 3.7 0 0 0-.813-1.222 3.6 3.6 0 0 0-1.219-.8 3.6 3.6 0 0 0-1.429-.248m0 5.513a1.67 1.67 0 0 1-1.234-.523 1.76 1.76 0 0 1-.482-1.27 1.75 1.75 0 0 1 .474-1.282 1.69 1.69 0 0 1 1.242-.523 1.66 1.66 0 0 1 1.241.524 1.727 1.727 0 0 1 .471 1.281 1.746 1.746 0 0 1-.479 1.27 1.7 1.7 0 0 1-1.233.523" clip-rule="evenodd"></path>
+                        <path fill="#fff" d="M192.412 15.509h2.015v7.124h-2.015z"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="studio-logo-dark_svg__a">
+                            <path fill="#fff" d="M0 0h207.837v30.07H0z"></path>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#probleme" class="nav-link">Problèmes</a>
+                <a href="#solution" class="nav-link">Solution</a>
+                <a href="#cas-usage" class="nav-link">Cas d’usage</a>
+                <a href="#preuves" class="nav-link">Preuves</a>
+                <a href="#impact" class="nav-link">Impact</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#audit" class="nav-link">Audit</a>
+            </div>
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Overlay pour fermer le menu mobile -->
+    <div class="nav-overlay"></div>
+
+
+    <!-- Container des slides -->
+    <div class="slides-container">
+        <!-- 1. Hero Section -->
+        <section class="hero-section" id="accueil">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-line">Automatisez.</span>
+                        <span class="title-line">Déléguez.</span>
+                        <span class="title-line">Respirez.</span>
+                    </h1>
+                    <p class="hero-description">OVO vous libère des tâches chronophages avec des automatisations clé en main pour PME.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Section Problème -->
+        <section class="feature-section" id="probleme">
+            <div class="feature-container">
+                <div class="feature-content">
+                    <h2 class="feature-title">Chaque semaine,<br>vous perdez du temps à…</h2>
+                    <div class="dynamic-title-example">
+                        <span class="dynamic-example" id="dynamic-example">trier vos emails</span>
+                    </div>
+                    <p class="feature-text">Des tâches répétitives qui vous prennent des heures chaque semaine et qui pourraient être automatisées.</p>
+                </div>
+                <div class="feature-image">
+                    <img class="dynamic-problem-image active" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=1000&h=700&fit=crop&auto=format&q=70" alt="Tâches répétitives" />
+                    <img class="dynamic-problem-image" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1000&h=700&fit=crop&auto=format&q=70" alt="Gestion commerciale" />
+                    <img class="dynamic-problem-image" src="https://images.unsplash.com/photo-1554224154-26032cdc0d0b?w=1000&h=700&fit=crop&auto=format&q=70" alt="Facturation" />
+                    <img class="dynamic-problem-image" src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?w=1000&h=700&fit=crop&auto=format&q=70" alt="Support client" />
+                    <img class="dynamic-problem-image" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1000&h=700&fit=crop&auto=format&q=70" alt="Suivi projet" />
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Solution -->
+        <section class="feature-section" id="solution">
+            <div class="feature-container">
+                <div class="feature-image">
+                    <div class="carousel-container solution-carousel">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-slide">
+                                <div class="card solution-card">
+                                    <img src="https://images.unsplash.com/photo-1521737711867-e3b973753290?w=600&h=400&fit=crop&auto=format&q=70" alt="Audit express">
+                                    <h3>Audit express</h3>
+                                    <p>Analyse de vos process en 30min</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="card solution-card">
+                                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop&auto=format&q=70" alt="Conception sur mesure">
+                                    <h3>Conception sur mesure</h3>
+                                    <p>Automatisations personnalisées avec n8n + IA</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="card solution-card">
+                                    <img src="https://images.unsplash.com/photo-1521737711867-e3b973753290?w=600&h=400&fit=crop&auto=format&q=70" alt="Déploiement rapide">
+                                    <h3>Déploiement rapide</h3>
+                                    <p>Mise en production en moins de 7 jours</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="card solution-card">
+                                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop&auto=format&q=70" alt="Formation & suivi">
+                                    <h3>Formation & suivi</h3>
+                                    <p>Documentation complète + support 30 jours</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-dots" aria-label="Pagination" role="tablist">
+                            <button class="carousel-dot" role="tab" aria-selected="true" aria-label="Étape 1"></button>
+                            <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Étape 2"></button>
+                            <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Étape 3"></button>
+                            <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Étape 4"></button>
+                        </div>
+                        <button class="carousel-btn carousel-prev" aria-label="Précédent">‹</button>
+                        <button class="carousel-btn carousel-next" aria-label="Suivant">›</button>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <h2 class="feature-title">L'automatisation intelligente, sans développeur ni formation</h2>
+                    <p class="feature-text">Nos 4 étapes pour un résultat rapide et concret, sans alourdir vos équipes.</p>
+                    <p class="diff">Contrairement aux consultants classiques, nous livrons du concret, pas des rapports.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Cas d’usage -->
+        <section class="feature-section" id="cas-usage">
+            <div class="feature-container">
+                <div class="feature-content" style="max-width:100%">
+                    <h2 class="feature-title">Automatisations les plus demandées par nos clients</h2>
+                    <div class="carousel-container usecase-carousel">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-slide">
+                                <div class="card">
+                                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=400&fit=crop&auto=format&q=70" alt="Gestion commerciale" class="card-image" />
+                                    <div class="icon" data-icon-url="/app/studio/icons/mail.svg"></div>
+                                    <h3>Gestion commerciale</h3>
+                                    <p>Auto-relance devis → <strong>+23% conversion</strong></p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="card">
+                                    <img src="https://images.unsplash.com/photo-1554224154-26032cdc0d0b?w=600&h=400&fit=crop&auto=format&q=70" alt="Facturation" class="card-image" />
+                                    <div class="icon" data-icon-url="/app/studio/icons/receipt-2.svg"></div>
+                                    <h3>Facturation</h3>
+                                    <p>Génération + envoi + archivage → <strong>5h/mois</strong></p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="card">
+                                    <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?w=600&h=400&fit=crop&auto=format&q=70" alt="Support client" class="card-image" />
+                                    <div class="icon" data-icon-url="/app/studio/icons/headset.svg"></div>
+                                    <h3>Support client</h3>
+                                    <p>Tri automatique + réponses types → <strong>-60% temps</strong></p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="card">
+                                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop&auto=format&q=70" alt="Suivi projet" class="card-image" />
+                                    <div class="icon" data-icon-url="/app/studio/icons/layout-dashboard.svg"></div>
+                                    <h3>Suivi projet</h3>
+                                    <p>Sync multi-outils → <strong>Dashboards temps réel</strong></p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="card">
+                                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600&h=400&fit=crop&auto=format&q=70" alt="RH/Admin" class="card-image" />
+                                    <div class="icon" data-icon-url="/app/studio/icons/users.svg"></div>
+                                    <h3>RH/Admin</h3>
+                                    <p>Onboarding + documents → <strong>Process 3x</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-dots" aria-label="Pagination" role="tablist">
+                            <button class="carousel-dot" role="tab" aria-selected="true" aria-label="Carte 1"></button>
+                            <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Carte 2"></button>
+                            <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Carte 3"></button>
+                            <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Carte 4"></button>
+                            <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Carte 5"></button>
+                        </div>
+                        <button class="carousel-btn carousel-prev" aria-label="Précédent">‹</button>
+                        <button class="carousel-btn carousel-next" aria-label="Suivant">›</button>
+                </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- 5. Preuve sociale -->
+        <section class="feature-section" id="preuves">
+            <div class="feature-container">
+                <div class="feature-content" style="max-width:100%">
+                    <h2 class="feature-title" style="text-align:center">Ils gagnent des heures chaque semaine</h2>
+                    <div class="carousel-container testimonial-carousel">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-slide">
+                                <div class="testimonial-card">
+                                    <p class="quote">"J'ai récupéré 12h/semaine dès le 2e mois. Ma gestion commerciale tourne maintenant toute seule."</p>
+                                    <p class="author">— Marc D., agence web</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="testimonial-card">
+                                    <p class="quote">"Nos devis se transforment en commandes 35% plus souvent depuis les relances automatiques."</p>
+                                    <p class="author">— Sarah M., e-commerce</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-dots" aria-label="Pagination" role="tablist">
+                            <button class="carousel-dot" role="tab" aria-selected="true" aria-label="Témoignage 1"></button>
+                            <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Témoignage 2"></button>
+                        </div>
+                        <button class="carousel-btn carousel-prev" aria-label="Précédent">‹</button>
+                        <button class="carousel-btn carousel-next" aria-label="Suivant">›</button>
+                    </div>
+                    <div class="logos">Auto-école • Cabinet médical • Agence immo • Courtier • Artisan BTP • Service B2B</div>
+                    <div class="guarantee">Garantie satisfaction 30 jours ou remboursement intégral</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Impact chiffré -->
+        <section class="feature-section" id="impact">
+            <div class="feature-container">
+                <div class="feature-content impact">
+                    <h2 class="feature-title">+<span class="counter" data-count="1247">0</span> heures économisées ce mois-ci</h2>
+                    <ul class="metrics">
+                        <li><strong>73 PME</strong> accompagnées en 2024</li>
+                        <li><strong>847€/mois</strong> économisés en moyenne</li>
+                        <li><strong>ROI 340%</strong> en 6 mois</li>
+                    </ul>
+                    <p class="feature-text">Pendant que vous lisez ceci, vos concurrents automatisent déjà. Et vous ?</p>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop&auto=format&q=70" alt="Impact chiffré" />
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. FAQ -->
+        <section class="feature-section" id="faq">
+            <div class="feature-container">
+                <div class="feature-content faq">
+                    <h2 class="feature-title">Questions fréquentes</h2>
+                    <details>
+                        <summary>Et si mes process sont trop spécifiques ?</summary>
+                        <p>98% de nos automations sont du sur-mesure.</p>
+                    </details>
+                    <details>
+                        <summary>Combien ça coûte vraiment ?</summary>
+                        <p>À partir de 147€/mois, amorti dès la première automatisation.</p>
+                    </details>
+                    <details>
+                        <summary>Et si ça casse quelque chose ?</summary>
+                        <p>Tests complets, rollback possible et garantie fonctionnement.</p>
+                    </details>
+                    <details>
+                        <summary>J'ai pas le temps de former mes équipes</summary>
+                        <p>Formation 30min max, tout est intuitif.</p>
+                    </details>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800&h=600&fit=crop&auto=format&q=70" alt="FAQ" />
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. BONUS -->
+        <section class="feature-section" id="bonus">
+            <div class="feature-container">
+                <div class="feature-content">
+                    <h2 class="feature-title">Vous êtes arrivé jusqu'ici ?</h2>
+                    <p class="feature-text">Vous êtes exactement le type de dirigeant qui va exploser ses résultats avec l'automatisation.</p>
+                    <div class="bonus-offer">Code <strong>DECIDEUR</strong> : 1 mois offert sur votre première automatisation</div>
+                        </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop&auto=format&q=70" alt="Offre bonus" />
+                        </div>
+                    </div>
+        </section>
+
+        <!-- 9. CTA Final (Audit) -->
+        <section class="feature-section" id="audit">
+            <div class="feature-container">
+                <div class="feature-content" style="max-width:100%; text-align:center">
+                    <h2 class="feature-title">Audit gratuit en 30 min</h2>
+                    <p class="feature-text">Je découvre vos gains rapides et on vous donne un plan clair.</p>
+                    <div class="cta-group" style="justify-content:center">
+                        <a href="#audit" class="btn btn-primary">Réserver mon audit</a>
+                    </div>
+                    <p class="feature-text" style="margin-top:10px; opacity:.8">3 créneaux/semaine • Sans engagement</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Formulaire de contact -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 class="contact-title">Contactez-nous</h2>
+            <p class="contact-description">Prêt à automatiser votre entreprise ? Parlons-en !</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Votre téléphone">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Votre message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="contact-btn">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sticky CTA -->
+    <a href="#contact" class="sticky-cta btn btn-primary">Contactez-nous</a>
+</body>
+</html>
+
+

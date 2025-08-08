@@ -1,0 +1,71 @@
+/* Remplacement des couleurs - Rouge vers Bleu */
+.nav-link:hover,
+.nav-menu.active .nav-link:hover,
+.footer-link:hover {
+    color: #3B82F6 !important;
+}
+
+.nav-link::after,
+.nav-link:hover::after {
+    background: #3B82F6 !important;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%) !important;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3) !important;
+}
+
+.dynamic-example {
+    color: #3B82F6 !important;
+}
+
+.requirements-header {
+    background: rgba(59, 130, 246, 0.1) !important;
+}
+
+.header-text {
+    color: #3B82F6 !important;
+}
+
+.diff {
+    color: #3B82F6 !important;
+}
+
+.testimonials blockquote {
+    border-left: 4px solid #3B82F6 !important;
+}
+
+.guarantee {
+    background: rgba(59, 130, 246, 0.1) !important;
+    border: 1px solid rgba(59, 130, 246, 0.25) !important;
+}
+
+.impact .counter {
+    color: #3B82F6 !important;
+}
+
+.faq details {
+    border-left: 4px solid #3B82F6 !important;
+}
+
+.carousel-dot.active {
+    background: #3B82F6 !important;
+    border-color: rgba(59, 130, 246, 0.9) !important;
+}
+
+.testimonial-quote {
+    color: #3B82F6 !important;
+    border-left: 4px solid #3B82F6 !important;
+}
+
+.testimonial-quote {
+    background: rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Supprimer les flèches des carousels */
+.carousel-btn {
+    display: none !important;
+}

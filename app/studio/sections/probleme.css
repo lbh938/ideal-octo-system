@@ -1,0 +1,114 @@
+/* Section Problème Styles */
+#probleme .feature-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 140px;
+}
+
+#probleme .feature-content {
+    flex: 1;
+    text-align: left;
+}
+
+#probleme .feature-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles pour le titre dynamique avec exemples */
+.dynamic-title-example {
+    margin: 20px 0;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.dynamic-example {
+    font-size: 48px;
+    font-weight: 700;
+    color: #FE2C55;
+    transition: all 0.5s ease;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+.dynamic-example.fade-out {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.dynamic-example.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styles pour les images dynamiques */
+#probleme .feature-image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.dynamic-problem-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.dynamic-problem-image.active {
+    opacity: 1;
+}
+
+/* Responsive pour la section problème */
+@media (max-width: 1072px) {
+    #probleme .feature-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 40px;
+    }
+    
+    #probleme .feature-content {
+        text-align: center;
+    }
+    
+    .dynamic-image-container {
+        height: 300px;
+    }
+    
+    .dynamic-example {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dynamic-example {
+        font-size: 32px;
+    }
+    
+    #probleme .feature-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dynamic-example {
+        font-size: 28px;
+    }
+    
+    #probleme .feature-image {
+        height: 250px;
+    }
+}
